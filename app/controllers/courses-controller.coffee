@@ -4,7 +4,11 @@ utils = require 'lib/utils'
 
 mediator = Chaplin.mediator
 
-module.exports = class SearchController extends HomeController
+module.exports = class CoursesController extends HomeController
+
+  beforeAction: ->
+    super
+    utils.cleanAndSetSelectedBar('courses')
 
   index:->
     console.log "Courses controller"

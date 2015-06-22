@@ -23,6 +23,13 @@ _.extend utils,
   formatNumWithComma: (value) ->
     value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
+  cleanAndSetSelectedBar:(route)->
+    navBar = $('.navbar-right')
+    navBar.children('li.active').removeClass('active')
+    if(route != "home")
+      navBar.children('li').find("[data-route="+route+"]").parent().addClass('active')
+
+
 # Prevent creating new properties and stuff.
 Object.seal? utils
 
