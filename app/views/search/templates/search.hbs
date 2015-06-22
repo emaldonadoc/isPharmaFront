@@ -1,0 +1,50 @@
+<div class="search-input" >
+  <form id="rlx-search-form" class="search-form" onsubmit="return false">
+      <div>
+        <span id="rlx-span-readed-tag">Tag: <strong>{{tag}}</strong></span>
+        <span class="errorTxt"></span>
+      </div>
+  </form>
+
+  <div id="rlx-search-data" class="data-div">
+    <div class="table-scroll">
+      <table class="pure-table pure-table-horizontal">
+          <thead>
+            <tr>
+                <th><span>{{#getGlobalType}}{{/getGlobalType}}</span></th>
+                <th><span>Amount to load</span></th>
+                <th><span>Product</span></th>
+                <th><span>Truck Driver</span></th>
+            </tr>
+          </thead>
+
+          <tbody id="rlx-type-data-table">
+            {{#each items}}
+              <tr class="row-hover"
+                  data-id="{{id}}"
+                  data-dispatch="{{dispatch}}"
+                  data-amount="{{amountToLoad}}"
+                  data-product="{{product}}"
+                  data-carrier="{{carrier}}"
+                  data-order="{{po}}"
+                  data-vehicle="{{vehicle}}"
+                  data-customer="{{customer}}"
+               >
+                {{#isDispatch}}
+                  <td>{{dispatch}}</td>
+                {{else}}
+                  <td>{{po}}</td>
+                {{/isDispatch}}
+
+                <td>{{formatWithCommaAndWeightType amountToLoad}}</td>
+                <td>{{product}}</td>
+                <td>{{truckDriver}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+
+      </table>
+    </div>
+  </div>
+
+</div>

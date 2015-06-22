@@ -1,0 +1,25 @@
+<div class="rlx-modal-header">
+    <button class="close-btn close-x close-cancel" type="button">
+        <span>X</span>
+    </button>
+    <span>Select Driver</span>
+</div>
+
+<div class="rlx-modal-body" style="text-align: left">
+    <label>Please click on driver name to continue: </label>
+    <div class="scroll">
+      <table class="pure-table pure-table-horizontal" style="width: 100%">
+        <tbody>
+          {{#each drivers}}
+            <tr class="row-hover">
+              <td class="rlx-driver-name"><label>{{this}}</label></td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<div class="rlx-modal-footer" style="margin-top: 13px !important;">
+  <input type="button" class="rlx-button rlx-button-modal close-cancel" value="Cancel" >
+</div>

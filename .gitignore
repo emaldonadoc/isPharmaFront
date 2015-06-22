@@ -1,0 +1,7 @@
+.idea/
+*.iml
+generators/
+node_modules/
+bower_components/
+public/
+.DS_Store
