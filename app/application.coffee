@@ -6,5 +6,4 @@ module.exports = class Application extends Chaplin.Application
   #   # (by calling `super`) after that.
     super
     @started = true
-    @router.stopHistory()
     Object.freeze? this
