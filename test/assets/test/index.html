@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="stylesheets/test.css" />
+  <script type="text/javascript" src="../javascripts/vendor.js"></script>
+  <script type="text/javascript" src="../javascripts/app.js"></script>
+  <script type="text/javascript">
+    window.wbTestEnv = true;
+  </script>
+  <script type="text/javascript">
+  (function() {
+      'use strict';
+      var loadSpecs = function() {
+        console.log('Loading specs...');
+        yepnope.injectJs('javascripts/test.js', function() {
+          require('initialize');
+          require('test/initialize');
+          console.log('Running mocha');
+          (window.mochaPhantomJS || mocha).run();
+        });
+      };
+
+      yepnope.injectJs('javascripts/test-vendor.js', function() {
+          loadSpecs();
+      });
+
+  })();
+  </script>
+</head>
+<body>
+  <div id="mocha"></div>
+</body>
+</html>

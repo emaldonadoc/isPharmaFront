@@ -1,0 +1,75 @@
+@import 'nib'
+
+.header
+  width: 551px
+  margin: 0 auto
+  padding: 5px
+  font-size: 24px
+  font-weight: 300
+  font-size: 1.25rem
+  line-height: 1.2
+
+  &-link
+    display: inline-block
+    height: 50px
+    text-decoration: none
+    font-size: 25px
+    color: white
+    padding: 10px 128px
+    background: url("/CommandCenter/kiosk/images/logo.png") no-repeat
+    span
+      line-height 71px
+      margin-left 99px
+
+
+    &.last-link
+      padding-left: 9px;
+
+  ul
+    margin: 5px 0
+  li
+    display: inline
+
+.rlx-hide
+  display: none
+
+.rlx-button
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(
+              top,
+              #ffffff 0%,
+              #ffffff 50%,
+              #b5b5b5);
+  background: -webkit-gradient(
+              linear, left top, left bottom,
+              from(#ffffff),
+              color-stop(0.50, #ffffff),
+              to(#b5b5b5));
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #161715;
+  -moz-box-shadow:
+  0px 1px 3px rgba(000,000,000,0.5),
+  inset 0px 0px 3px rgba(255,255,255,1);
+  -webkit-box-shadow:
+  0px 1px 3px rgba(000,000,000,0.5),
+  inset 0px 0px 3px rgba(255,255,255,1);
+  box-shadow:
+  0px 1px 3px rgba(000,000,000,0.5),
+  inset 0px 0px 3px rgba(255,255,255,1);
+  text-shadow:
+  0px -1px 0px rgba(000,000,000,0.2),
+  0px 1px 0px rgba(255,255,255,1);
+  &:hover
+    cursor pointer
+  &:active
+    position:relative;
+    top:7px;
+  &:disabled
+    color grey
+    position:relative
+    top:5px
+    border 1px none grey
