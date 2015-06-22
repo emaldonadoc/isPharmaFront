@@ -16,10 +16,11 @@ module.exports = class HeaderView extends View
 
   redirectTabLink:(e)->
     e.preventDefault()
-    route= @$(e.currentTarget).data('route')
-    console.log "ROUTE TO REDIRECT--->", route
-    $('main').fadeOut(
-      complete: =>
-        utils.redirectTo controller:route, action:'index'
-    )
+    currentTarget = @$(e.currentTarget)
+    route= currentTarget.data('route')
+    unless(currentTarget.parent().hasClass('active'))
+      $('main').fadeOut(
+        complete: =>
+          utils.redirectTo controller:route, action:'index'
+      )
 
