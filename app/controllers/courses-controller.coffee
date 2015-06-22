@@ -1,5 +1,5 @@
 HomeController = require 'controllers/home-controller'
-ServicesView = require 'views/services/services-view'
+CoursesView = require 'views/courses/courses-view'
 utils = require 'lib/utils'
 
 mediator = Chaplin.mediator
@@ -7,6 +7,6 @@ mediator = Chaplin.mediator
 module.exports = class SearchController extends HomeController
 
   index:->
-    console.log "Search controller"
-    @view = new ServicesView
+    console.log "Courses controller"
+    @view = new CoursesView
 

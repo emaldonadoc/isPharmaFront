@@ -10,3 +10,4 @@ module.exports = class MainView extends View
 
   initialize: ->
     super
+    $(@container).fadeIn()
