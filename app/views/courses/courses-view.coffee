@@ -7,6 +7,7 @@ module.exports = class ServicesView extends View
 
   initialize: ->
     super
+    $('.navbar-header').show()
 
   attach:->
     super
