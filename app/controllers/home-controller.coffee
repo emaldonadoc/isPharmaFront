@@ -1,6 +1,6 @@
 Controller = require 'controllers/base/controller'
-HomePageView = require 'views/home/home-page-view'
-HomeModel = require 'models/home/home'
+MainView = require 'views/home/main-view'
+MainModel = require 'models/home/home'
 mediator = Chaplin.mediator
 
 module.exports = class HomeController extends Controller
@@ -10,5 +10,5 @@ module.exports = class HomeController extends Controller
 
   index:()->
     console.log "Index action"
-    @model = new HomeModel
-    @view = new HomePageView model:@model
+    @model = new MainModel
+    @view = new MainView model:@model
