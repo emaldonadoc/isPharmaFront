@@ -7,7 +7,6 @@
     "jquery": "*",
     "jquery-validation": "~1.12.0",
     "json2": "*",
-    "custombox": "*",
     "yepnope": "~1.5.4"
   },
   "overrides": {
@@ -15,9 +14,6 @@
       "dependencies": {
         "lodash": "*"
       }
-    },
-    "custombox":{
-      "main":["src/js/custombox.js", "src/css/custombox.css"]
     },
     "json2":{
       "main":"json2.js"

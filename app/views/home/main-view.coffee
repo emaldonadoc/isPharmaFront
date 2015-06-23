@@ -11,4 +11,4 @@ module.exports = class MainView extends View
   initialize: ->
     super
     $(@container).fadeIn()
-    $('.navbar-header').hide()
+    $('#isp-home-link').hide()

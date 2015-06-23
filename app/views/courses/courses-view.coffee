@@ -7,7 +7,7 @@ module.exports = class ServicesView extends View
 
   initialize: ->
     super
-    $('.navbar-header').show()
+    $('#isp-home-link').show()
 
   attach:->
     super
