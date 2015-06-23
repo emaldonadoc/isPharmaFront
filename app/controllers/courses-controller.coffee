@@ -11,6 +11,5 @@ module.exports = class CoursesController extends HomeController
     utils.cleanAndSetSelectedBar('courses')
 
   index:->
-    console.log "Courses controller"
     @view = new CoursesView
 

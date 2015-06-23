@@ -12,6 +12,5 @@ module.exports = class HomeController extends Controller
 
 
   index:()->
-    console.log "Index action"
     @model = new MainModel
     @view = new MainView model:@model
