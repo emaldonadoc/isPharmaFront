@@ -6,7 +6,7 @@ if(empty($_POST['name'])  		||
    empty($_POST['message'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
-	echo "No arguments Provided!";
+	echo "Argumentos no validos, favor de verificar!";
 	return false;
    }
 	
@@ -16,11 +16,12 @@ $email_address = $_POST['email'];
 $message = $_POST['message'];
 	
 // create email body and send it	
-$to = 'your-email@your-domain.com'; // PUT YOUR EMAIL ADDRESS HERE
-$email_subject = "Modern Business Contact Form:  $name"; // EDIT THE EMAIL SUBJECT LINE HERE
+$to = 'bugatti26@hotmail.com'; // PUT YOUR EMAIL ADDRESS HERE
+$email_subject = "I.S. Pharma contacto de:  $name"; // EDIT THE EMAIL SUBJECT LINE HERE
 $email_body = "You have received a new message from your website's contact form.\n\n"."Here are the details:\n\nName: $name\n\nPhone: $phone\n\nEmail: $email_address\n\nMessage:\n$message";
-$headers = "From: noreply@your-domain.com\n";
+$headers = "From: noreply@ispharma.com\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			
+
 ?>
