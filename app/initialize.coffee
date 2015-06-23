@@ -8,8 +8,7 @@ $ ->
 # Add additional application-specific properties and methods
 # e.g. Chaplin.mediator.prop = null
     data =
-      'services-url': '/CommandCenter/'
-      'config-type':  'Dispatch'
+      'services-url': '/bin/'
 
     get: (property)->
       data[property]
