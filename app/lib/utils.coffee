@@ -28,8 +28,8 @@ _.extend utils,
     navBar.children('li.active').removeClass('active')
     if(route != "home")
       navBar.children('li').find("[data-route="+route+"]").parent().addClass('active')
-    if($(window).width() <= 767)
-      $('#isp-mobile-btn').click()
+      if($(window).width() <= 767)
+        $('#isp-mobile-btn').click()
 
 
 # Prevent creating new properties and stuff.
