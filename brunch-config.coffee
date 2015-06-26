@@ -7,8 +7,6 @@ exports.config =
       joinTo:
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^(?!app)/
-        'test/javascripts/test.js': /^test[\\/](?!vendor)/
-        'test/javascripts/test-vendor.js': /^test[\\/]vendor/
       order:
         before:[
           'bower_components/jquery/dist/jquery.js'
@@ -18,7 +16,6 @@ exports.config =
     stylesheets:
       joinTo:
         'stylesheets/app.css' : /^(app|vendor|bower_components)/
-        'test/stylesheets/test.css': /^test/
 
     templates:
       joinTo: 'javascripts/app.js'

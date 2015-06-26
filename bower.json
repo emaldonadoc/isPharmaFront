@@ -1,12 +1,10 @@
 {
-  "name": "Kios-Terminal",
+  "name": "I.S. Pharma front",
   "version": "0.1.0",
   "main": "public/javascripts/app.js",
   "dependencies": {
     "chaplin": "1.0.0",
     "jquery": "*",
-    "jquery-validation": "~1.12.0",
-    "json2": "*",
     "yepnope": "~1.5.4"
   },
   "overrides": {
