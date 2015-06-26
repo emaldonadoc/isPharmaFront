@@ -23,9 +23,6 @@
   },
   "devDependencies": {
     "brunch" : "*",
-    "bower" : "*",
-    "uglify-js": "~2.4.15",
-    "mocha-phantomjs": "*",
-    "phantomjs": "*"
+    "bower" : "*"
   }
 }
