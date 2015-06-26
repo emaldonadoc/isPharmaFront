@@ -18,5 +18,4 @@
     </table>
     <button class="btn btn-success" id="btn-crea-curso" style="margin-top: 10px">Crear curso</button>
 </div>
-<script src="js/lib/bootstrap-datepicker.js"></script>
 <script src="js/form-curso.js"></script>
