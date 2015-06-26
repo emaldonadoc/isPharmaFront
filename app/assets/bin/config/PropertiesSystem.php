@@ -1,0 +1,3 @@
+<?php
+
+$ResultadosPorPaginaCursos = 5;

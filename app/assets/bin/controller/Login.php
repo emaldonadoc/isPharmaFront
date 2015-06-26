@@ -2,18 +2,16 @@
 
 require '../utils/UtilsJSON.php';
 
-$json = UtilsJSON::getInstance();
-      
-$user = trim($_GET['user']);
-$password = trim($_GET['password']);
+$user = trim($_POST['user']);
+$password = trim($_POST['password']);
 
 if(!$user){
-    $json->writeJSON(false,'Por favor ingrese su nombre usuario','');
+    UtilsJSON::writeJSON(false,'Por favor ingrese su nombre de usuario',null);
     return;
 }
 
 if(!$password){
-    $json->writeJSON(false,'Por favor ingrese su password','');
+    UtilsJSON::writeJSON(false,'Por favor ingrese su password',null);
     return;
 }
 
@@ -24,13 +22,14 @@ $login = new LoginDAO();
 $isValid = $login->isValidLogin($user, $password);
 
 if(!$isValid){
-    $json->writeJSON(false,$login->getReponse(),'');
+    UtilsJSON::writeJSON(false,$login->getReponse(),null);
     return;
 }
 
-include_once '../data/Usuario.php';
-$usuario = $json->writeUsuario($login->getUsuario());
+session_start();
 
-$json->writeJSON(true,$login->getReponse(),$usuario);
+$_SESSION['usuario'] = $login->getUsuario();
+
+UtilsJSON::writeJSON(true,$login->getReponse(),$login->getUsuario());
 return;
 

@@ -1,0 +1,20 @@
+<div style="margin: 20px">
+    <table class="table table-striped">
+        <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th></th>
+        </tr>
+        {{#data}}
+            <tr>
+                <td>{{titulo}}</td>
+                <td>{{descripcion}}</td>
+                <td style="text-align: center">
+                    <button class="btn btn-danger" onclick="remueveCurso({{id}})">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </td>
+            </tr>
+        {{/data}}
+    </table>
+</div>

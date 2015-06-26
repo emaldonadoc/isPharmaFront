@@ -1,0 +1,21 @@
+<div style="margin: 20px">
+    <table class="table table-striped">
+        <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th></th>
+        </tr>
+        {{#noticias}}
+            <tr>
+                <td>{{titulo}}</td>
+                <td>{{descripcion}}</td>
+                <td style="text-align: center">
+                    <button class="btn btn-danger" onclick="remueveNoticia({{id}})">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </td>
+            </tr>
+        {{/noticias}}
+    </table>
+    <div style="text-align: center" id="paginador"></div>
+</div>
