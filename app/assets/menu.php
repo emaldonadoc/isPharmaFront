@@ -16,10 +16,7 @@
         <meta name="author" content="">
 
         <title>Menu</title>
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/modern-business.css" rel="stylesheet">
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="css/datepicker.css" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/app.css">
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
