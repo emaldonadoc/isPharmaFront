@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "brunch" : "*",
-    "bower" : "*"
+    "bower" : "*",
+    "node-minify": "^1.2.0"
   }
 }

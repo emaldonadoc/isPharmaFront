@@ -19,3 +19,11 @@ clean:
 	$(bower) cache clean; \
 	rm -rf node_modules; \
 	rm -rf bower_components; \
+
+release:
+	node minify.js; \
+	rm public/javascripts/vendor.js; \
+	rm public/javascripts/app.js; \
+	rm public/javascripts/*.map; \
+	mv public/javascripts/vendor-min.js public/javascripts/vendor.js; \
+	mv public/javascripts/app-min.js public/javascripts/app.js; \
