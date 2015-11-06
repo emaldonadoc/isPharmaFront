@@ -1,7 +1,7 @@
 exports.config =
   # See http://brunch.io/#documentation for docs.
   server:
-    port: 8888
+    port: 9999
   files:
     javascripts:
       joinTo:

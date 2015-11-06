@@ -13,14 +13,18 @@ module.exports = class HeaderView extends View
     super
     @delegate 'click', '.isp-courses-link', @redirectTabLink
 
-
   redirectTabLink:(e)->
     e.preventDefault()
     currentTarget = @$(e.currentTarget)
     route= currentTarget.data('route')
-    unless(currentTarget.parent().hasClass('active'))
+    subProductMenu = @$('#is-product-submenu')
+
+    if(route is "products")
+      subProductMenu.slideToggle()
+    else unless(currentTarget.parent().hasClass('active'))
       $('main').fadeOut(
         complete: =>
+          subProductMenu.slideToggle() if subProductMenu.is(':visible')
           utils.redirectTo controller:route, action:'index'
       )
 
