@@ -12,3 +12,7 @@ module.exports = class MainView extends View
     super
     $(@container).fadeIn()
     $('#isp-home-link').hide()
+
+  attach: ->
+    super
+    $('.bxslider').bxSlider({auto:yes,pause:3000})
