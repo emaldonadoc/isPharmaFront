@@ -5,7 +5,8 @@
   "dependencies": {
     "chaplin": "1.0.0",
     "jquery": "*",
-    "yepnope": "~1.5.4"
+    "yepnope": "~1.5.4",
+    "bxslider-4": "*"
   },
   "overrides": {
     "backbone": {
