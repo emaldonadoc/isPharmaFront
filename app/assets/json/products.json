@@ -1,0 +1,368 @@
+{
+  waters:[
+    {
+      category: "Modulo de Separacion 2695",
+      image: "http://ispharma.com/productos/2695.png",
+      products:[
+        {
+          name:"Valvula de referencia",
+          numParte: "WAT045438",
+          articles:[
+            {
+              description: "HP Motorized Valve (# WAT045438)",
+              image: "http://ispharma.com/productos/2695_hp.png"
+            },
+            {
+              description: "High Pressure Motorized Valve Rebuild Kit [WAT045424]",
+              image: "http://ispharma.com/productos/2695_high.png"
+            }
+          ]
+        },
+        {
+          name:"Sello del inyector ensamblado",
+          numParte: "700002791",
+          articles:[
+            {
+              description: "2695 Injector Seal Pack Assembly (# 700002791)",
+              image: "http://ispharma.com/productos/2695_inyector.png"
+            },
+            {
+              description: "Seal Pack Rebuild Kit w/Needle (# WAT271019)",
+              image: "http://ispharma.com/productos/2695_seal.png"
+            }
+          ]
+        },
+        {
+          name:"Filtro en linea",
+          numParte: "WAT088084",
+          articles:[
+            {
+              description: "In Line Filter Insert (# WAT088084)",
+              image: "http://ispharma.com/productos/2695_filter.png"
+            }
+          ]
+        },
+        {
+          name:"Valvula de Purga",
+          numParte: "WAT270965",
+          articles:[
+            {
+              description: "Prime/Vent Valve [WAT270965]",
+              image: "http://ispharma.com/productos/2695_primer.png"
+            }
+          ]
+        },
+        {
+          name:"Kitt. De mtto. 2695",
+          numParte: "700004073",
+          articles:[
+            {
+              description: "PM Kit, Alliance Solvent Manager (# 700004073)",
+              image: "http://ispharma.com/productos/2695_kit.png"
+            }
+          ]
+        },
+        {
+          name:"Kit. De Mtto. 2695 (Completo)",
+          numParte: "WAT270944",
+          articles:[
+            {
+              description: "2690/2695 PM Kit (# WAT270944)",
+              image: "http://ispharma.com/productos/2695_pmkit.png"
+            }
+          ]
+        },
+        {
+          name:"Cartucho de Valvula check (paq. De 2)",
+          numParte: "700000254",
+          articles:[
+            {
+              description: "Check Valve Kit (2/pkg) (# 700000254)",
+              image: "http://ispharma.com/productos/2695_check.png"
+            }
+          ]
+        },
+        {
+          name:"Sello de piston",
+          numParte: "WAT270938",
+          articles:[
+            {
+              description: "Plunger Seal Replacement Kit - Yellow (2/pkg) (# WAT270938)",
+              image: "http://ispharma.com/productos/2695_plunger.png"
+            }
+          ]
+        },
+        {
+          name:"Sellos de cara de piston",
+          numParte: "WAT270939",
+          articles:[
+            {
+              description: "Face Seal Replacement Kit (4 pkg) (# WAT270939)",
+              image: "http://ispharma.com/productos/2695_face.png"
+            }
+          ]
+        },
+        {
+          name:"Valvula selenoide 3",
+          numParte: "700001229",
+          articles:[
+            {
+              description: "V3 Solenoid Valve Assembly (# 700001229)",
+              image: "http://ispharma.com/productos/2695_v3.png"
+            }
+          ]
+        },
+        {
+          name:"Jeringa de 250µL",
+          numParte: "WAT073109",
+          articles:[
+            {
+              description: "Syringe Assembly, 250 µL (# WAT073109)",
+              image: "http://ispharma.com/productos/2695_syringe.png"
+            }
+          ]
+        },
+        {
+          name:"Valvula selenoide 4",
+          numParte: "WAT078800",
+          articles:[
+            {
+              description: "V4 Solenoid Valve Assembly (# WAT078800)",
+              image: "http://ispharma.com/productos/2695_v4.png"
+            }
+          ]
+        },
+        {
+          name:"Transductor de presion",
+          numParte: "WAT270966",
+          articles:[
+            {
+              description: "Pressure Transducer (# WAT270966)",
+              image: "http://ispharma.com/productos/2695_pressure.png"
+            }
+          ]
+        },
+        {
+          name:"Sellos de Lavado",
+          numParte: "WAT270940",
+          articles:[
+            {
+              description: "Wash Tube Seal Replacement Kit (4/pkg) (# WAT270940)",
+              image: "http://ispharma.com/productos/2695_wash.png"
+            }
+          ]
+        },
+        {
+          name:"Piston",
+          numParte: "WAT271067",
+          articles:[
+            {
+              description: "Oriented Plunger PerformancePLUS (# WAT271067)",
+              image: "http://ispharma.com/productos/2695_oriented.png"
+            }
+          ]
+        },
+        {
+          name:"Valvula proporcionadora",
+          numParte: "WAT270927",
+          articles:[
+            {
+              description: "Gradient Proportioning Valve (GPV) (# WAT270927)",
+              image: "http://ispharma.com/productos/2695_gradient.png"
+            }
+          ]
+        },
+      ]
+    },
+    {
+      category: "DETECTOR 2996/996",
+      image: "http://ispharma.com/productos/2996_996.png",
+      products:[
+        {
+          name:"Lampara de deuterio",
+          numParte: "WAT052586",
+          articles:[
+            {
+              description: "PDA DETECTOR PERFORMANCE MAINTENANCE KIT [WAT052586]",
+              image: "http://ispharma.com/productos/2996_996_detector.png"
+            }
+          ]
+        },
+        {
+          name:"Celda de Flujo",
+          numParte: "WAT057919",
+          articles:[
+            {
+              description: "Analytical Cell Assembly, 10 mm (# WAT057919)",
+              image: "http://ispharma.com/productos/2996_996_cell.png"
+            }
+          ]
+        },
+        {
+          name:"Lentes de celda",
+          numParte: "WAT057923",
+          articles:[
+            {
+              description: "Cell Lens Assembly 2/pk (# WAT057923)",
+              image: "http://ispharma.com/productos/2996_996_lens.png"
+            }            
+          ]
+        },
+        {
+          name:"Shutter Detector 2996",
+          numParte: "WAT057090",
+          articles:[
+            {
+              description: "Shutter Assembly WAT057909",
+              image: "http://ispharma.com/productos/2996_996_shutter.png"
+            }
+          ]
+        },
+        {
+          name:"Divisor de Luz",
+          numParte: "WAT057912",
+          articles:[
+            {
+              description: "996 Beam Splitter WAT057912",
+              image: "http://ispharma.com/productos/2996_996_beam.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      category: "DETECTOR 2489",
+      image: "http://ispharma.com/productos/2489.png",
+      products:[
+        {
+          name:"Lampara de deuterio",
+          numParte: "201000281",
+          articles:[
+            {
+              description: "Lamp, High Brightness (# 201000281)",
+              image: "http://ispharma.com/productos/2489_lamp.png"
+            }
+          ]
+        },
+        {
+          name:"Celda de Flujo",
+          numParte: "WAS081140",
+          articles:[
+            {
+              description: "Flow Cell, Analytical (# WAS081140)",
+              image: "http://ispharma.com/productos/2489_cell.png"
+            }
+          ]
+        },
+        {
+          name:"Kit para reconstruir celda 2489",
+          numParte: "WAS081347",
+          articles:[
+            {
+              description: "3mm Flow Cell Rebuild Kit (# WAS081347)",
+              image: "http://ispharma.com/productos/2489_3mm.png"
+            }            
+          ]
+        }
+      ]
+    },
+    {
+      category: "DETECTOR 2487",
+      image: "http://ispharma.com/productos/2487.png",
+      products:[
+        {
+          name:"Lampara de deuterio",
+          numParte: "WAS081142",
+          articles:[
+            {
+              description: "Lamp PM Kit, Deuterium - 2487 (# WAS081142)",
+              image: "http://ispharma.com/productos/2487_lamp.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      category: "717 PLUS",
+      image: "http://ispharma.com/productos/717.png",
+      products:[
+        {
+          name:"Transductor de Presion",
+          numParte: "WAT045400",
+          articles:[
+            {
+              description: "Strain Gauge Transducer Assembly [WAT045400]",
+              image: "http://ispharma.com/productos/717_strain.png"
+            }
+          ]
+        },
+        {
+          name:"Kit de Mtto. para 717 Plus",
+          numParte: "WAT052669",
+          articles:[
+            {
+              description: "715/717plus Performance Maintenance Kit (# WAT052669)",
+              image: "http://ispharma.com/productos/717_plus.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  dionex:[
+    {
+      category: "BOMBAS DIONEX",
+      image: "http://ispharma.com/productos/bombas_dionex.png",
+      products:[
+        {
+          name:"Sellos para Bomba DGP-3600A",
+          numParte: "6025.2011A",
+          articles:[
+            {
+              description: "Kit, Support/piston seal ring",
+              image: "http://ispharma.com/productos/bombas_dionex_kit.png"
+            }
+          ]
+        },
+        {
+          name:"Pistones para Bomba DGP-3600A",
+          numParte: "6035-2240",
+          articles:[
+            {
+              description: "Sapphier Piston Unit U3000 pumb",
+              image: "http://ispharma.com/productos/bombas_dionex_sapphier.png"
+            }
+          ]
+        },
+        {
+          name:"Valvulas Check para Bomba DGP-3600A",
+          numParte: "6020-2300",
+          articles:[
+            {
+              description: "Dobule check valve cartridge",
+              image: "http://ispharma.com/productos/bombas_dionex_dobule.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  perkinElmer:[
+    {
+      category: "Bomba Serie 200",
+      image: "http://ispharma.com/productos/bomba_serie_200.png",
+      products:[
+        {
+          name:"Piston de Baja Presion",
+          numParte: "N2600104",
+          articles:[
+            {
+              description: "Piston Low, Low Pressure N2600104",
+              image: "http://ispharma.com/productos/bomba_serie_200_piston.png"
+            }
+          ]
+        }        
+      ]
+    }
+  ]
+}
