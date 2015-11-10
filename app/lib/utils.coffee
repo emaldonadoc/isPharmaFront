@@ -15,10 +15,7 @@ _.extend utils,
         'Content-Type': 'application/json'
     }
     $.extend defaultOptions, options
-    $.ajax(url,defaultOptions)
-
-  cleanModalContainer: ->
-    $('#rlx-modals').remove()
+    $.ajax(url,options)
 
   formatNumWithComma: (value) ->
     value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
@@ -30,7 +27,6 @@ _.extend utils,
       navBar.children('li').find("[data-route="+route+"]").parent().addClass('active')
       if($(window).width() <= 767)
         $('#isp-mobile-btn').click()
-
 
 # Prevent creating new properties and stuff.
 Object.seal? utils
