@@ -1,8 +1,6 @@
 Controller = require 'controllers/base/controller'
 utils = require 'lib/utils'
 MainView = require 'views/home/main-view'
-MainModel = require 'models/home/home'
-mediator = Chaplin.mediator
 
 module.exports = class HomeController extends Controller
 
@@ -10,7 +8,5 @@ module.exports = class HomeController extends Controller
     super
     utils.cleanAndSetSelectedBar('home')
 
-
   index:()->
-    @model = new MainModel
-    @view = new MainView model:@model
+    @view = new MainView
