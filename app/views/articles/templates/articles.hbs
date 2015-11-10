@@ -10,22 +10,22 @@
 
 
     {{#each articles}}
+
         <ol class="breadcrumb">
             <li><a>Articulo(s)</a>
             </li>
             <li class="active">{{name}}, Numero de parte: <strong>{{numPart}}</strong></li>
         </ol>
+
         <div class="row">
           {{#each articles}}
-            <div class="col-md-4 img-portfolio">
-                <a href="">
-                    <img class="img-responsive img-hover" src="{{image}}" alt="">
-                </a>
-                <h3>
-                    <a href="">{{description}}</a>
-                </h3>
-                <p>{{description}}</p>
-            </div>
+              <div class="col-md-7">
+                  <a><img class="img-responsive img-hover" src="{{image}}" alt=""></a>
+              </div>
+              <div class="col-md-5">
+                  <h3>{{description}}</h3>
+                  <p>{{description}}</p>
+              </div>
           {{/each}}
         </div>
     {{/each}}
