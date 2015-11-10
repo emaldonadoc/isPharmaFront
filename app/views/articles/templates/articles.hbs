@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">{{category}}
+                <small>Articulos {{company}}</small>
+            </h1>
+        </div>
+    </div>
+
+
+    {{#each articles}}
+        <ol class="breadcrumb">
+            <li><a>Articulo(s)</a>
+            </li>
+            <li class="active">{{name}}, Numero de parte: <strong>{{numPart}}</strong></li>
+        </ol>
+        <div class="row">
+          {{#each articles}}
+            <div class="col-md-4 img-portfolio">
+                <a href="">
+                    <img class="img-responsive img-hover" src="{{image}}" alt="">
+                </a>
+                <h3>
+                    <a href="">{{description}}</a>
+                </h3>
+                <p>{{description}}</p>
+            </div>
+          {{/each}}
+        </div>
+    {{/each}}
+
+</div>
+
+

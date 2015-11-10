@@ -28,7 +28,7 @@ _.extend utils,
       @onMobileHideMenu()
 
   onMobileHideMenu: ->
-    if($(window).width() <= 767)
+    if($(window).width() <= 767 && $('.navbar-right').is(':visible'))
       $('#isp-mobile-btn').click()
 
 

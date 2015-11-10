@@ -1,6 +1,6 @@
 View = require 'views/base/view'
 mediator = Chaplin.mediator
-
+utils = require 'lib/utils'
 
 module.exports = class ProductsView extends View
   autoRender: true
@@ -30,4 +30,4 @@ module.exports = class ProductsView extends View
     category = @$(e.currentTarget).parent().parent('.category-container').data('category')
     articles = @model.findArticlesByCategory(category)
     console.log("Articles found on model", articles);
-
+    utils.redirectTo action: "articles", params: company:mediator.data.get('company-selected') ,category: category, articles:articles
