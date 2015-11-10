@@ -7,3 +7,11 @@ module.exports = class Products extends Model
   initialize: ->
     super
 
+  findArticlesByCategory:(findCategory)->
+    categories = @get('categories')
+    products = {}
+    for category in categories
+      if(category.category == findCategory)
+        products = category.products
+        break
+    return products

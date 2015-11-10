@@ -11,6 +11,7 @@ module.exports = class ProductsView extends View
     super
     $('#isp-home-link').show()
     @subscribeEvent 'change-company', @eventChangeCompany
+    @delegate 'click', '.category-company', @selectCategory
 
   attach:->
     super
@@ -21,3 +22,12 @@ module.exports = class ProductsView extends View
     @model.set('company', companySelected)
     @model.set('categories', Chaplin.mediator.data.get('products')[companySelected])
     @render()
+
+
+  selectCategory:(e)->
+    e.preventDefault()
+    e.stopPropagation()
+    category = @$(e.currentTarget).parent().parent('.category-container').data('category')
+    articles = @model.findArticlesByCategory(category)
+    console.log("Articles found on model", articles);
+

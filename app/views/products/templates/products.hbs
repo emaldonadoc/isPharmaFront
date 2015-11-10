@@ -1,11 +1,9 @@
-<!-- Page Content -->
 <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">{{company}}
-                {{!<small>Siempre la mejor calidad</small>--}}
+                <small>I.S. Pharma</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#">Inicio</a>
@@ -14,26 +12,17 @@
             </ol>
         </div>
     </div>
-    <!-- /.row -->
 
-    <!-- Projects Row -->
+
     <div class="row">
-
         {{#each categories}}
-            <div class="col-md-4 img-portfolio">
-                <a>
-                    <img class="img-responsive img-hover" src="{{image}}" style="height: 272px;">
-                </a>
-                <h3>
-                    <a>{{category}}</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            <div class="col-md-4 img-portfolio category-container" data-category="{{category}}">
+                <a href="#"><img class="img-responsive img-hover category-company" src="{{image}}" style="height: 272px;"></a>
+                <h3><a href="#" class="category-company">{{category}}</a></h3>
             </div>
          {{/each}}
-
     </div>
 
     <hr>
 
 </div>
-<!-- /.container -->
