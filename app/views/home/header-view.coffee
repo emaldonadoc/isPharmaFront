@@ -7,7 +7,6 @@ module.exports = class HeaderView extends View
   container: 'header'
   template: require './templates/header'
 
-
   initialize: ->
     super
 
@@ -15,6 +14,7 @@ module.exports = class HeaderView extends View
     super
     @setProductsJson()
     @delegate 'click', '.isp-courses-link', @redirectTabLink
+    @delegate 'click', '.company-products', @showProductByCompany
 
   redirectTabLink:(e)->
     e.preventDefault()
@@ -35,3 +35,11 @@ module.exports = class HeaderView extends View
     @model.getJsonProducts(context:@)
     .done((json)->mediator.data.set('products', json))
 
+  showProductByCompany:(e)->
+    e.preventDefault()
+    e.stopPropagation()
+    current = @$(e.currentTarget)
+    @$('#is-product-submenu').slideToggle()
+    mediator.data.set('company-selected',current.data('company'))
+    @publishEvent('change-company')
+    utils.redirectTo controller:"products", action:'index'

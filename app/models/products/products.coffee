@@ -1,8 +1,9 @@
 Model = require 'models/base/model'
 
-# Base model.
-module.exports = class AlertModal extends Model
+
+module.exports = class Products extends Model
   # Mixin a synchronization state machine.
   # _(@prototype).extend Chaplin.SyncMachine
   initialize: ->
     super
+
