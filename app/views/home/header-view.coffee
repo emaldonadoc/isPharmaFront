@@ -42,4 +42,5 @@ module.exports = class HeaderView extends View
     @$('#is-product-submenu').slideToggle()
     mediator.data.set('company-selected',current.data('company'))
     @publishEvent('change-company')
+    utils.onMobileHideMenu()
     utils.redirectTo controller:"products", action:'index'

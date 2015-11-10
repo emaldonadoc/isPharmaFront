@@ -14,7 +14,6 @@ module.exports = class ProductsView extends View
 
   attach:->
     super
-    console.log "Model attributes", @model.attributes
     $('main').fadeIn()
 
   eventChangeCompany:()->
