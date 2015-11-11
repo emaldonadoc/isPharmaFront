@@ -6,11 +6,9 @@
   border: #ccc 2px solid;
   background-color: white !important;
 }
-.sub-menu-overlay li:hover{
-    background-color: black !important;
-}
-.sub-menu-product a{
-  width: 65px;
+.sub-menu-overlay li{
+    width: 197px !important;
+    border-bottom: 1px solid #ccc !important;
 }
 .sub-menu-product p{
   margin-left: 85px;
