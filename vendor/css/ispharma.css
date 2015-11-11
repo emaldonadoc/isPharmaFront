@@ -1,9 +1,29 @@
+.sub-menu-overlay{
+  display:none;
+  width: 200px;
+  position:fixed !important;
+  z-index: 10 !important;
+  border: #ccc 2px solid;
+  background-color: white !important;
+}
+.sub-menu-overlay li:hover{
+    background-color: black !important;
+}
 .sub-menu-product a{
-  width: 150px;
+  width: 65px;
 }
 .sub-menu-product p{
   margin-left: 85px;
+  color: #485c74 !important;
 }
 .sub-menu-product img{
     margin-top: -34px;
+}
+
+@media (max-width: 768px){
+  .sub-menu-overlay{
+      background-color: rgba(250,250, 250, 0.95) !important;
+      top: 50px;
+      left: 100px !important;
+  }
 }
