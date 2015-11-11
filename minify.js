@@ -4,26 +4,27 @@
 var compressor = require('node-minify');
 
 new compressor.minify({
-    type: 'gcc',
+    type: 'uglifyjs',
     fileIn: 'public/javascripts/vendor.js',
     fileOut: 'public/javascripts/vendor-min.js',
     callback: function(err, min){
-        if(!err)
+        if(!err){
             console.log("VENDOR FILE HAS BEEN MINIFIED!! :)");
-        else
-            console.log("AN ERROR OCCURRED WHEN TRY TO MINIFY VENDOR, :(");
-
+        } else{
+            console.log(["AN ERROR OCCURRED WHEN TRY TO MINIFY VENDOR, :(" , err] );
+        }
     }
 });
 
 new compressor.minify({
-    type: 'gcc',
+    type: 'uglifyjs',
     fileIn: 'public/javascripts/app.js',
     fileOut: 'public/javascripts/app-min.js',
     callback: function(err, min){
-        if(!err)
-            console.log("APP FILE HAS BEEN MINIFIED!! :)");
-        else
-            console.log("AN ERROR OCCURRED WHEN TRY TO MINIFY APP, :(");
+        if(!err){
+            console.log("APP FILE HAS BEEN MINIFIED!! :)" );
+        }else{
+            console.log(["AN ERROR OCCURRED WHEN TRY TO MINIFY APP, :(", err]);
+        }
     }
 });
