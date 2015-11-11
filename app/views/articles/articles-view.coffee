@@ -10,7 +10,12 @@ module.exports = class ArtlcesView extends View
   initialize: ->
     super
     $('#isp-home-link').show()
+    @delegate 'click', '#isp-back-to-products', @backToProducts
 
   attach:->
     super
     $('main').fadeIn()
+
+  backToProducts:(e)->
+    e.preventDefault()
+    utils.redirectTo controller:"products", action:'index'

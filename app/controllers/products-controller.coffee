@@ -23,6 +23,9 @@ module.exports = class ProductsController extends HomeController
     else
       utils.redirectTo controller:"home", action:'index'
 
-  articles: (data)->
-    @model = new ArticlesModel(data)
-    @view = new ArticlesView model: @model
+  articles:(data)->
+    if(!$.isEmptyObject(data))
+      @model = new ArticlesModel(data)
+      @view = new ArticlesView model: @model
+    else
+      utils.redirectTo controller:"home", action:'index'
