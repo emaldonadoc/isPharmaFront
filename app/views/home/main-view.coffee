@@ -15,5 +15,3 @@ module.exports = class MainView extends View
   attach: ->
     super
     $('.bxslider').bxSlider({auto:yes,pause:3000})
-
-
